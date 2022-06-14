@@ -136,3 +136,10 @@ hr {
   transition: 0.2s ease-out;
   fill: #ffa300;
 }
+.for_project {
+  width: 30%;
+}
+.for_project:hover {
+  border-radius: 55%;
+  transition: 0.2s ease-out;
+}
