@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/svg" sizes="32x32" rel="icon" href="/img/cv_102350.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" media="all and (max-width: 1295px)" />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet" />
+    <title>CV Andrey Alekseychik</title>
+  </head>
 
+  <body>
+    <header>
+      <div class="name">
+        <h1>Andrey Alekseychik</h1>
+        <h2>Front-end web developer (Beginner)</h2>
+      </div>
+      <div><img src="img/photo.jpg" alt="it is me" class="photo" /></div>
+    </header>
+    <nav class="nav_links">
+      <ul class="ul_links">
+        <li><a class="ul_links" href="#about_me">About Me</a></li>
+        <li><a class="ul_links" href="#location">Location</a></li>
+        <li><a class="ul_links" href="#education">Education</a></li>
+        <li><a class="ul_links" href="#skills">Skills</a></li>
+        <li><a class="ul_links" href="#code">Code</a></li>
+        <li><a class="ul_links" href="#projects">Projects</a></li>
+        <li><a class="ul_links" href="#contacts">contacts</a></li>
+        <li><a class="ul_links" href="#characteristics">characteristics</a></li>
+      </ul>
+    </nav>
+    <main class="flex_main">
+      <div class="test">
+        <article id="about_me">
+          <h2>about me</h2>
+          <p>I am a graduate of the Belarusian State University of Informatics and Radioelectronics. My specialty is a software engineer. And now I'm a beginner Front-End developer.</p>
+          <p>I recently successfully completed html, css and js courses at IT-Academy</p>
+          <p>I also continue to self-teach and at the moment I am actively learning how to use React.</p>
+          <hr />
+        </article>
+        <article id="education">
+          <h2>education</h2>
+          <ul>
+            <li>The Rolling Scopes School «JavaScript/Front-end. Stage 0»</li>
+            <li>IT-Academy «Website development using HTML, CSS and JavaScript»</li>
+            <li>IT-Academy «Development of web applications with JavaScript»</li>
+            <li>BELARUSIAN STATE UNIVERSITY OF INFORMATION SCIENCE AND RADIO ELECTRONICS</li>
+            <li>"College of Business and Law"</li>
+          </ul>
+          <hr />
+        </article>
+        <article id="code">
+          <h2>code</h2>
+          <pre>
+          
+            function tabMenutop(evttop, Nametop) {
+            let i, tabcontenttop, tablinkstop;
+            tabcontenttop = document.getElementsByClassName("tabcontenttop");
+            for (i = 0; i &lt; tabcontenttop.length; i++) {
+              tabcontenttop[i].style.display = "none";
+            }
+            tablinkstop = document.getElementsByClassName("tablinkstop");
+            for (i = 0; i &lt; tablinkstop.length; i++) {
+              tablinkstop[i].className = tablinkstop[i].className.replace(" active", "");
+            }
+            document.getElementById(Nametop).style.display = "block";
+            evttop.currentTarget.className += " active";
+          }
+        
+                         
+          </pre>
+          <hr class="commit" />
+          <pre>
+          <code>class Img {
+            constructor(img, x, y, dx, dy) {
+              this.x = x;
+              this.y = y;
+              this.img = img;
+              this.dx = dx;
+              this.dy = dy;
+            }
+            drawIma() {
+              my_canvas.drawImage(this.img, this.x, this.y, 150, 125);
+              this.moveing();
+            }
+            moveing() {
+              if (this.x > window.innerWidth || this.x &lt; 0) {
+                this.dx = -this.dx;
+              }
+              if (this.y > window.innerHeight || this.y &lt; 0) {
+                this.dy = -this.dy;
+              }
+              this.x += this.dx;
+              this.y += this.dy;
+            }
+          }</code>
+            
+            
+          </pre>
+          <hr />
+        </article>
+        <article id="projects">
+          <h2>projects</h2>
+          <a href="https://davinchileo.github.io/">rgrgrgr</a>
+          <p></p>
+          <hr />
+        </article>
+      </div>
+      <aside class="test2">
+        <div>
+          <article id="contacts">
+            <h2>contacts</h2>
+            <ul>
+              <li>+375(29)256-42-02</li>
+              <li>silver@mail.ru</li>
+              <li><a href="https://t.me/Juan_Sanchez_Villa_Lobos_Ramirez">Telegram</a></li>
+              <li><a href="https://discordapp.com/users/447421649713758218/">Discord</a></li>
+            </ul>
+            <hr />
+          </article>
+          <article id="location">
+            <h2>Location</h2>
+            <p>Republic of Belarus, Minsk.</p>
+            <hr />
+          </article>
+          <article id="skills">
+            <h2>skills</h2>
+            <ul>
+              <li>
+                HTML <br />
+                <progress class="for_progress" id="progressHTML" max="100" value="85">85%</progress>
+              </li>
+              <li>CSS<br /><progress class="for_progress" id="progressCSS" max="100" value="85">85%</progress></li>
+              <li>JavaScript<br /><progress class="for_progress" id="progressJavaScript" max="100" value="65">65%</progress></li>
+              <li>React<br /><progress class="for_progress" id="progressReact" max="100" value="40">40%</progress></li>
+              <li>Git<br /><progress class="for_progress" id="progressGit" max="100" value="80">80%</progress></li>
+            </ul>
+            <hr />
+          </article>
+          <article id="characteristics">
+            <h2>characteristics</h2>
+            <ul>
+              <li>active</li>
+              <li>adaptable</li>
+              <li>eager</li>
+              <li>easy-going</li>
+              <li>friendly</li>
+              <li>honest</li>
+              <li>outgoing</li>
+              <li>sociable</li>
+            </ul>
+            <hr />
+          </article>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="for_footer">
+      <nav class="nav_footer">
+        <ul>
+          <li>
+            <a href="https://vk.com/" target="blank" title="ВК">
+              <svg class="style_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" height="48px">
+                <path
+                  d="M45.763,35.202c-1.797-3.234-6.426-7.12-8.337-8.811c-0.523-0.463-0.579-1.264-0.103-1.776 c3.647-3.919,6.564-8.422,7.568-11.143C45.334,12.27,44.417,11,43.125,11l-3.753,0c-1.237,0-1.961,0.444-2.306,1.151 c-3.031,6.211-5.631,8.899-7.451,10.47c-1.019,0.88-2.608,0.151-2.608-1.188c0-2.58,0-5.915,0-8.28 c0-1.147-0.938-2.075-2.095-2.075L18.056,11c-0.863,0-1.356,0.977-0.838,1.662l1.132,1.625c0.426,0.563,0.656,1.248,0.656,1.951 L19,23.556c0,1.273-1.543,1.895-2.459,1.003c-3.099-3.018-5.788-9.181-6.756-12.128C9.505,11.578,8.706,11.002,7.8,11l-3.697-0.009 c-1.387,0-2.401,1.315-2.024,2.639c3.378,11.857,10.309,23.137,22.661,24.36c1.217,0.12,2.267-0.86,2.267-2.073l0-3.846 c0-1.103,0.865-2.051,1.977-2.079c0.039-0.001,0.078-0.001,0.117-0.001c3.267,0,6.926,4.755,8.206,6.979 c0.368,0.64,1.056,1.03,1.8,1.03l4.973,0C45.531,38,46.462,36.461,45.763,35.202z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/DaVinchiLeo">
+              <svg class="style_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" height="48px">
+                <path
+                  d="M32.029,8.345c-13.27,0 -24.029,10.759 -24.029,24.033c0,10.617 6.885,19.624 16.435,22.803c1.202,0.22 1.64,-0.522 1.64,-1.16c0,-0.569 -0.02,-2.081 -0.032,-4.086c-6.685,1.452 -8.095,-3.222 -8.095,-3.222c-1.093,-2.775 -2.669,-3.514 -2.669,-3.514c-2.182,-1.492 0.165,-1.462 0.165,-1.462c2.412,0.171 3.681,2.477 3.681,2.477c2.144,3.672 5.625,2.611 6.994,1.997c0.219,-1.553 0.838,-2.612 1.526,-3.213c-5.336,-0.606 -10.947,-2.669 -10.947,-11.877c0,-2.623 0.937,-4.769 2.474,-6.449c-0.247,-0.608 -1.072,-3.051 0.235,-6.36c0,0 2.018,-0.646 6.609,2.464c1.917,-0.533 3.973,-0.8 6.016,-0.809c2.041,0.009 4.097,0.276 6.017,0.809c4.588,-3.11 6.602,-2.464 6.602,-2.464c1.311,3.309 0.486,5.752 0.239,6.36c1.54,1.68 2.471,3.826 2.471,6.449c0,9.232 -5.62,11.263 -10.974,11.858c0.864,0.742 1.632,2.208 1.632,4.451c0,3.212 -0.029,5.804 -0.029,6.591c0,0.644 0.432,1.392 1.652,1.157c9.542,-3.185 16.421,-12.186 16.421,-22.8c0,-13.274 -10.76,-24.033 -24.034,-24.033"
+                /></svg
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/andrey-alekseychik85b029234/">
+              <svg class="style_svg" viewBox="-10 -10 60 60" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24ZM16.9605 19.8778H11.5216V36.2196H16.9605V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM36.5754 26.8497C36.5754 21.8303 33.8922 19.4941 30.3131 19.4941C27.4254 19.4941 26.1326 21.0802 25.4107 22.1929V19.8783H19.9711C20.0428 21.4117 19.9711 36.22 19.9711 36.22H25.4107V27.0934C25.4107 26.605 25.446 26.1178 25.5898 25.7681C25.9829 24.7924 26.8779 23.7822 28.3805 23.7822C30.3494 23.7822 31.1365 25.2807 31.1365 27.4767V36.2196H36.5752L36.5754 26.8497Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://rs.school/">
+              <img class="footer_logo" src="/img/rs_school_js.svg" alt="RS School" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p>2022</p>
+    </footer>
+  </body>
+</html>
